@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huggies好奇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <script src="js/responsive.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bpopup.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:url("img/bg2.jpg") no-repeat;
+            background-size: cover;
+        }
+        .mom1{
+            background:url("img/personAndText.png") no-repeat;
+            background-size: 100% 100%;
+            height: 45%;
+            width: 100%;
+            margin-top: 5%;
+            padding: 2rem;
+        }
+        .text{
+            width: 90%;
+            background: url("img/text.png") no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            height: 3rem;
+        }
+        .codeContent{
+            width: 90%;
+            margin: 1.5rem auto;
+            background: url("img/square.png") no-repeat;
+            background-size: 100% 100%;
+            padding: 1rem;
+            height: 35%;
+        }
+        .text1{
+            width: 70%;
+            margin: 0 auto;
+            background: url("img/1.png") no-repeat;
+            background-size: 100% 100%;
+            height: 1.6rem;
+        }
+        .code{
+            width: 12rem;
+            height: 12rem;
+            background: white;
+            margin: 1rem auto;
+        }
+        .weixin{
+            width: 92%;
+            height: 38%;
+            background: url("img/2.png") no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            padding: 3rem;
+        }
+        .zhuyi{
+            padding-left: 0.5rem;
+            color: #99685c;
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .role{
+            text-align: right;
+            font-size: 1rem;
+            color: #99685c;
+            margin-bottom: 0.2rem;
+            margin-right: 0.2rem;
+        }
+        .paddingDiv{
+            width: 13rem;
+            height: 13rem;
+            margin: 0 auto
+        }
+    </style>
+</head>
+<body>
+<div class="mom1">
+    <div class="paddingDiv"></div>
+</div>
+<div class="text"></div>
+<div class="codeContent">
+    <div class="text1"></div>
+    <div class="code"></div>
+</div>
+<div class="weixin">
+    <div class="paddingDiv"></div>
+</div>
+<div class="zhuyi">
+    <p>
+        领取资格：完成手机号验证且关注好奇公众号的用户
+    </p>
+    <p>
+        (一条彩信只能由一个用户领取)
+    </p>
+    <p>
+        活动有效期：2018年7月30日-2018年8月12日
+    </p>
+</div>
+<p class="role">活动规则></p>
+
+<!--如果宽度为ipad，某些样式发生改变-->
+<script>
+    if(document.body.clientWidth  > "700"){
+        $(".mom1").css("margin-top","9%");
+        $(".mom1").css("padding","10rem");
+        $(".weixin").css("padding","10rem");
+        $(".text").css("height","7rem");
+        $(".text1").css("height","2.5rem");
+        $(".zhuyi").css("font-size","1.2rem");
+        $(".zhuyi").css("padding-left","2rem")
+    }
+</script>
+</body>
+</html>
